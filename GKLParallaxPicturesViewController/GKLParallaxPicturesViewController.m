@@ -96,7 +96,7 @@ static CGFloat PageControlHeight = 20.0f;
         
         // load up our delegate to see when images are tapped on
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
-        tapGesture.numberOfTapsRequired = 2;
+        tapGesture.numberOfTapsRequired = 1;
         [_transparentScroller addGestureRecognizer:tapGesture];
     }
     return self;
